@@ -1,0 +1,140 @@
+﻿body
+{
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    background-color: #DD614A;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    opacity: 0.6;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+.logo
+{
+   margin-left:5%;
+}
+
+.nav {
+    display: inline-block;
+    margin-left: 10%;
+    opacity: 1;
+    transition: all ease .4s;
+    width: 10vw;
+    height: 65%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    border: 2px solid;
+    border-radius: 30px;
+    background: transparent;
+    transition: all ease .4s;
+}
+.nav a
+{
+    transition: all ease .4s;  
+}
+
+.navcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*margin-left: 7%;*/
+}
+.content 
+{
+    z-index: 0;
+    background-color: #F48668;
+    width: 100%;
+    height: 1500px; /*100vh*/
+    position: relative;
+}
+
+.content-txt 
+{
+    font-size: 2vw;
+    text-align: center;
+    width: 45%;
+    height: 65%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+}
+.nav a:hover
+{
+    display: inline-block;   
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.nav:hover 
+{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.blur
+{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+} 
+
+.blur img
+{
+    z-index:  2;
+    width: 100vw;
+    height: 7vh;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+
+
+/*.snow-bg {
+   position: relative;
+}
+
+.snow-bg:after {
+   content: '';
+   display: block;
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+   background-image: url('https://library.elementor.com/resources/christmas-snow-effect/s1.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s2.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s3.png');
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+ 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}*/
