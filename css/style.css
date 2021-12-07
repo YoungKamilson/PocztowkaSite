@@ -6,10 +6,7 @@
     font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
 }
-a{
-    text-decoration:none;
-    color:white;
-}
+
 
 header {
     position: fixed;
@@ -33,7 +30,8 @@ header {
    margin-left:5%;
 }
 
-.nav {
+.nav 
+{
     display: inline-block;
     margin-left: 5%;
     opacity: 1;
@@ -44,16 +42,18 @@ header {
     text-align: center;
     cursor: pointer;
     font-size: 24px;
-    border: 2px solid;
+    border: 2px solid white;
     border-radius: 30px;
     background: transparent;
     transition: all ease .4s;
 }
-.nav:last-child{
+.nav:last-child
+{
     margin-right: 5%;
 }
 
-.navcont {
+.navcont 
+{
     width:89%;
     display: flex;
     flex-direction: row;
@@ -63,8 +63,7 @@ header {
 .content 
 {
     z-index: 0;
-    background-color: #F48668;
-    background: linear-gradient(#008cff, #ffffff); /*#F48668  #ff3700*/ 
+    background: linear-gradient(#ff0000, #ffffff); /*#F48668  #ff3700*/ 
     width: 100%;
     height: 1500px; /*100vh*/
     position: relative;
@@ -79,6 +78,21 @@ header {
     position: absolute;
     top: 20%;
     left: 50%;
+    z-index: 1;
+}
+.content-image
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    text-align: center;
+    width: 45%;
+    height: 20%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
     z-index: 1;
 }
 .nav:hover
@@ -101,7 +115,7 @@ header {
     z-index:  2;
     width: 100vw;
     height: 7vh;
-    -webkit-mask: radial-gradient(circle, #0000 150px, rgba(0, 0, 0, 0.9) 160px);
+    -webkit-mask: linear-gradient(#ffff,#ffff,#ffff,#ffff,#ffff,#ffff,#ffff,rgb(126, 126, 126), #0000);
     backdrop-filter: blur(5px);
 }
 .snowflake {
@@ -139,3 +153,5 @@ header {
  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }*/
+
+
